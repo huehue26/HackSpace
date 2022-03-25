@@ -4,7 +4,7 @@ function Picture(props) {
   return (
     <div className="p-2">
       <div className="text-yellow-500 text-2xl pl-10 py-4">{props.heading}</div>
-      <div className="grid grid-cols-3">
+      <div className="grid md:grid-cols-3 grid-cols-1 ">
         <div className="p-2">
           <img src={props.imageLink} className="h-72 w-full" />
         </div>

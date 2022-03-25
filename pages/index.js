@@ -31,16 +31,16 @@ export default function Home() {
         {" "}
         Astronomy Picture of the Day
       </div>
-      <div className="flex flex-row justify-center items-center pt-10">
+      <div className="flex flex-row justify-around items-center pt-10">
         <div className="flex flex-col justify-center items-center">
-          <div className="text-gray-200 text-lg pb-1 pr-10">From</div>
+          <div className="text-gray-200 text-lg pb-1">From</div>
           <input type="date" onChange={(e) => setStartDate(e.target.value)} />
         </div>
-        <div className="flex flex-col justify-center items-center ml-20">
-          <div className="text-gray-200 text-lg pb-1 pr-10">Till</div>
+        <div className="flex flex-col justify-center items-center">
+          <div className="text-gray-200 text-lg pb-1">Till</div>
           <input type="date" onChange={(e) => setEndDate(e.target.value)} />
         </div>
-        <div className="pl-10 mt-8">
+        <div className="mt-8">
           <button
             className="h-7 w-20 bg-gray-200 cursor-pointer hover:bg-yellow-500 hover:text-gray-100 rounded-sm"
             onClick={() => getAllData()}
