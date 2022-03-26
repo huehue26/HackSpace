@@ -56,6 +56,7 @@ export default function Home() {
                 imageLink={apod.url}
                 heading={apod.title}
                 details={apod.explanation}
+                date={apod.date}
                 key={apod.title}
               />
             );
